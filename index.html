@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>started</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="image-container">
+        <img src="your-image-file.jpg" alt="Description of your image">
+      </div>
+    <form action="#" onsubmit="onsignup(event)">
+        <h1>Book a call</h1>
+        <br> <br>
+        <h4>book a call slot and our representative will call you within 1hr of selected time.</h4>
+        <hr>
+        <label for="username">Name:</label><br>
+        <input type="text" name="username" required>
+        <br> <br>
+        <label for="mail">Email:</label><br>
+        <input type="text" name="mail" required>
+        <br> <br>
+        <label for="phone">Phone:</label><br>
+        <input type="text" name="phone" required>
+        <br> <br>
+        <label for="call">time for call:</label><br>
+        <input type="text" name="call" required>
+        <button >Get a call </button>
+
+    </form>
+    <script>
+        function oncall(event){
+            event.preventDefault();
+            console.log(event.target.username.value)
+            console.log(event.target.mail.value)
+            console.log(event.target.call.value)
+
+        }
+    </script>
+
+    
+</body>
+</html>
